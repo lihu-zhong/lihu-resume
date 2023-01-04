@@ -1,0 +1,274 @@
+% Resume, templated off of simple-resume-cv on CTAN. Comments are excluded
+% unless there's a significant deviation from the original template.
+
+% Used as-is from CTAN, disabling a few embedded third-party packages that
+% caused me problems (hyphenat and datetime2)
+% Also removed the page numbering footer.
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+
+% Darken the background a little to be easier on the eyes.
+% Color on recommendation from http://bettermotherfuckingwebsite.com/
+\usepackage{xcolor}
+% #EEEEEE
+\definecolor{lightgray}{rgb}{.93,.93,.93}
+\pagecolor{lightgray}
+
+\newcommand{\CVAuthor}{Lihu Ben-Ezri-Ravin}
+\newcommand{\CVTitle}{Lihu Ben-Ezri-Ravin's resume}
+\newcommand{\CVNote}{Document rendered {\today} with {\XeLaTeX}}
+
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+\begin{document}
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{mailto:lihu@tuta.io}
+{lihu@tuta.io}
+\,\SubBulletSymbol\,
++1\,(484)\,479-6125
+\par
+\href{https://github.com/lbenezriravin}
+{Code (professional): \url{https://github.com/lbenezriravin}}
+\,\SubBulletSymbol\,
+\href{https://scm.yoloswag.lol/lihu}
+{Code (personal): \url{https://scm.yoloswag.lol/lihu}}
+\end{SubTitle}
+
+\begin{Body}
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+{\raggedright
+
+\Entry
+\textbf{Programming Languages: }
+Python,
+Bash,
+Rust,
+Kermit
+
+\Entry
+\textbf{Operating systems:}
+\Gap
+\BulletItem
+\textbf{Linux: }
+CentOS/Rocky,
+Fedora,
+Ubuntu,
+Raspberry Pi OS,
+VyOS/EdgeOS,
+embedded
+
+\Gap
+\BulletItem
+\textbf{Other: }
+Cisco IOS
+
+\Entry
+\textbf{Software: }
+{\LaTeX},
+git,
+Ansible,
+systemd,
+firewalld,
+udev,
+Wireshark/tcpdump,
+Terraform,
+Packer,
+Docker/Buildah/Podman,
+Buildroot,
+
+\Entry
+\textbf{Networking: }
+Wi-FI (802.11ac/ax),
+VLAN (802.1q),
+ARP,
+IP,
+ICMP,
+UDP,
+DHCP,
+TCP,
+TFTP,
+DNS,
+NTP,
+SSH
+
+\Entry
+\textbf{SaaS tools: }
+AWS (EC2, ECS, ECR, S3, IAM, SNS, Cloudwatch, ACM, RDS),
+Jenkins,
+TeamCity,
+Artifactory
+
+\Entry
+\textbf{Other standards: }
+YAML,
+HCL,
+RS232,
+SCPI,
+OpenAPI,
+OCI
+
+}
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+\textbf{Portal Instruments}
+\hfill
+\DatestampYM{2022}{04} --
+\DatestampYM{2022}{12}
+\Gap
+\textit{Senior DevOps Engineer}
+\Gap
+\BulletItem
+Documented and automated the existing CI system using Terraform
+\BulletItem
+Spearheaded company-wide security compliance efforts
+\BulletItem
+Established and automated code standards for Python scripts
+
+\BigGap
+
+\Entry
+\textbf{Starry Inc.}
+\hfill
+\DatestampYM{2017}{02} --
+\DatestampYM{2022}{03}
+\Gap
+\textit{Principal Systems Software Engineer}
+\Gap
+\BulletItem
+Wrote firmware in Rust for embedded Linux on Starry radios
+
+\BigGap
+\textit{Manager, Systems Software Tooling}
+\Gap
+\BulletItem
+Owned the firmware build infrastructure, a CI/CD pipeline using Jenkins and
+Kubernetes. Over 6 months, cut build time by 50\%, from 4 hours down to 2.
+\BulletItem
+Maintained the nightly test automation infrastructure, scaling it with
+the ballooning number of new tests and test harnesses
+\BulletItem
+Supported automated provisioning, updates, security patches, and
+technical support for engineering testbeds and manufacturing systems.
+\BulletItem
+Shipped one new product
+
+\BigGap
+\textit{Manager, Internet Firmware Validation}
+\Gap
+\BulletItem
+Oversaw the hiring process, growing the team from 4 to 9 engineers over 10
+months.
+\BulletItem
+Wrote product requirements and held engineers accountable for them
+\BulletItem
+Expanded test coverage while delivering on tight deadlines and
+communicating progress to C-suite
+\BulletItem
+Built and shipped a test storage and reporting solution using MariaDB
+\BulletItem
+Continued support for testbed management and automation, internally and for
+manufacturing
+\BulletItem
+Shipped three new products
+
+\BigGap
+\textit{Senior Systems Integration and Validation Engineer}
+\Gap
+\BulletItem
+Designed and implemented new test automation frameworks
+\BulletItem
+Implemented CI to automate enforcement of code standards using Jenkins
+\BulletItem
+Designed and wrote full-system test software for manufacturing,
+including controls for a variety of hardware components over RS232,
+USB, and ethernet.
+\BulletItem
+Wrote, maintained, and supported software for automated depot upgrades
+intended for non-technical users
+\BulletItem
+Developed and carried out the technical software interviews for new
+team hires. Succesfully hired dozens of employees over 4 years.
+\BulletItem
+Mentored 8 Northeastern co-ops over 3 years, each of which took ownership of
+long-term, critical projects. Two went on to take full-time positions with
+Starry.
+\BulletItem
+Expanded the test network and testbed automation infrastructure to the
+manufacturing line overseas. Maintained 24/7 uptime over 7 time zones.
+\BulletItem
+Identified and fixed various insecure practices across engineering
+\BulletItem
+Shipped two new products
+
+\BigGap
+\textit{Systems Integration and Validation Engineer}
+\Gap
+\BulletItem
+Designed and built new test harnesses
+\BulletItem
+Set up, from scratch, automation for administrating and documenting
+state on test harnesses using Ansible
+\BulletItem
+Built out an internal network for testing and development, as well
+as support for other engineering teams
+\BulletItem
+Debugged firmware and networking problems, both in the lab and in production
+\BulletItem
+Wrote, maintained, and supported test automation for manufacturing
+\BulletItem
+Migrated existing projects to Python 3
+\BulletItem
+Implemented team code standards (formatting, pylint, mypy, documentation, etc.)
+
+\BigGap
+\textit{Junior Software Engineer, QA}
+\Gap
+\BulletItem
+Wrote unit and integration tests for firmware on Starry radios
+\BulletItem
+Built, maintained, and automated physical test harnesses
+\BulletItem
+Introduced regular code review as practice on the team
+\BulletItem
+Shipped two new products
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{Swarthmore College}
+\Gap
+B.A. in Computer Science and Biology
+
+\end{Body}
+
+\end{document}
