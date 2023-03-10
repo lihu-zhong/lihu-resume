@@ -26,7 +26,7 @@
 
 % Datestamp format (default): {yyyy}{MM}{dd} ---> MMM yyyy (e.g., Jan 2008).
 \newcommand{\DatestampYMD}[3]{\mbox{\ShortMonth{#2} #1}}
-\newcommand{\DatestampYM}[2]{\mbox{\ShortMonth{#2} #1}}
+\newcommand{\DatestampYM}[2]{\mbox{\textit{\ShortMonth{#2} #1}}}
 \newcommand{\DatestampY}[1]{#1}
 \DeclareOption{MMMyyyy}{} % default
 
@@ -73,12 +73,13 @@
 
 % Geometry package for page margins.
 \RequirePackage[
-left=0.70in,
+left=0.50in,
 right=0.70in,
-top=0.60in,
-bottom=0.45in,
+top=0.50in,
+bottom=0.30in,
 nohead,
-includefoot]{geometry}
+]{geometry}
+%includefoot]{geometry}
 
 % PDF settings and properties.
 \RequirePackage{hyperref}
@@ -171,7 +172,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 \newcommand{\UseHeadingFont}{\normalfont}
 \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
 \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
-\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
+\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{20pt}{33.6pt}\selectfont\bfseries}
 \newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
 \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{9pt}{11pt}\selectfont\bfseries}
 \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{8.6pt}{10.3pt}\selectfont\bfseries}
@@ -240,9 +241,9 @@ BoldItalicFont=FreeSerifBoldItalic]
 \par\vspace{1.5\baselineskip}%
 \begin{list}
 {}
-{\setlength\leftmargin{1.2in}%
+{\setlength\leftmargin{1in}%
 \setlength\rightmargin{0in}%
-\setlength\labelwidth{1.2in}%
+\setlength\labelwidth{1.09in}%
 \setlength\labelsep{0in}%
 \setlength\listparindent{0in}%
 \setlength\itemindent{0in}%
@@ -268,7 +269,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 % Macro: Section (new section for Education, Research Experience, etc.).
 \newcommand{\Section}[3]
 {\par\pdfbookmark[2]{#2}{#3}%
-\item[\smash{\parbox[t]{1.2in}{\UseSectionFont\raggedright\MakeUppercase{#1}}}]%
+\item[\smash{\parbox[t]{1.09in}{\UseSectionFont\raggedright\MakeUppercase{#1}}}]%
 \par}
 
 % Macro: SubSection.
