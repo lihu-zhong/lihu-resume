@@ -13,8 +13,8 @@
 \definecolor{lightgray}{rgb}{.93,.93,.93}
 \pagecolor{lightgray}
 
-\newcommand{\CVAuthor}{Lihu Ben-Ezri-Ravin}
-\newcommand{\CVTitle}{Lihu Ben-Ezri-Ravin's resume}
+\newcommand{\CVAuthor}{Lihu Zhong}
+\newcommand{\CVTitle}{Lihu Zhong's resume}
 \newcommand{\CVNote}{Document rendered {\today} with {\XeLaTeX}}
 
 \hypersetup{
@@ -45,11 +45,8 @@ breaklinks}
 \,\SubBulletSymbol\,
 +1\,(484)\,479-6125
 \par
-\href{https://github.com/lbenezriravin}
-{Code (professional): \url{https://github.com/lbenezriravin}}
-\,\SubBulletSymbol\,
-\href{https://scm.yoloswag.lol/lihu}
-{Code (personal): \url{https://scm.yoloswag.lol/lihu}}
+\href{https://github.com/lihu-zhong}
+{Code: \url{https://github.com/lihu-zhong}}
 \end{SubTitle}
 
 \begin{Body}
@@ -63,17 +60,14 @@ breaklinks}
 \Entry
 \textbf{Programming Languages: }
 Python,
-Bash,
 Rust,
+Bash,
 Kermit
 
 \Entry
 \textbf{Operating systems:}
-CentOS/Rocky,
-Fedora,
-Ubuntu,
-Raspberry Pi OS,
-VyOS/EdgeOS,
+RHEL/Rocky/Fedora,
+Ubuntu/Debian/Raspberry Pi OS,
 Embedded Linux,
 Cisco IOS
 
@@ -81,46 +75,36 @@ Cisco IOS
 \textbf{Software: }
 git,
 Ansible,
+Puppet,
 systemd,
-firewalld,
-udev,
 Wireshark/tcpdump,
 Terraform,
-Packer,
-Docker/Buildah/Podman,
-Buildroot,
+Docker/Podman,
+Slurm,
 {\LaTeX}
 
 \Entry
 \textbf{Networking: }
-Wi-FI (802.11ac/ax),
-VLAN (802.1q),
 ARP,
-IP,
-ICMP,
-UDP,
 DHCP,
+DNS,
+ICMP,
+IP,
+NTP,
+SSH,
 TCP,
 TFTP,
-DNS,
-NTP,
-SSH
+UDP,
+VLAN,
+Wi-FI
 
 \Entry
 \textbf{SaaS tools: }
-AWS (EC2, ECS, ECR, S3, IAM, SNS, Cloudwatch, ACM, RDS),
+GCP,
+AWS,
 Jenkins,
-TeamCity,
-Artifactory
-
-%\Entry
-%\textbf{Other standards: }
-%YAML,
-%HCL,
-%RS232,
-%SCPI,
-%OpenAPI,
-%OCI
+Artifactory,
+Github,
 
 }
 
@@ -128,6 +112,32 @@ Artifactory
 {Experience}
 {Experience}
 {PDF:Experience}
+
+\Entry
+\textbf{The Broad Institute of MIT and Harvard}
+\hfill
+\DatestampYM{2023}{09} --
+\DatestampYM{2025}{07}
+\Gap
+\textit{Principal Systems Engineer}
+\Gap
+\BulletItem
+Administrated GCP services with Terraform, building and promoting self-serve
+processes that scaled with the size of the organization while adhering to
+federal security regulations.
+\BulletItem
+Administrated the on-prem HPC cluster using Puppet, Slurm, and GridEngine.
+\BulletItem
+Worked with scientists to migrate their ML workflows from bespoke configurations
+on bare-metal hardware to container-based cloud infrastructure.
+\BulletItem
+Deployed Backstage as an internal development platform, centralizing fragmented
+documentation and automating the ``Golden Path'' on standard processes.
+\BulletItem
+Built and evangelized IT-wide coding standards (ruff, pyright, prettier,
+etc.), along with CI tooling using GitHub actions and shared workflows.
+
+\BigGap
 
 \Entry
 \textbf{Portal Instruments}
@@ -138,15 +148,11 @@ Artifactory
 \textit{Senior DevOps Engineer}
 \Gap
 \BulletItem
-Converted the existing manually-configured VM-based CI to an OCI-compliant
-containerized system. Documented and automated the process using Terraform.
+Converted the existing manually-configured VM-based CI to a containerized
+system. Documented and automated the process using Terraform.
 \BulletItem
 Spearheaded company-wide security compliance efforts. Targeted specific
 immediate business requirements, using ISO 27001 and SOC 2 as reference.
-\BulletItem
-Collaborated with senior developers to establish code standards for
-Python scripts. Automated them and worked directly with junior developers and
-electrical/mechanical engineers to convert existing projects.
 
 \BigGap
 
@@ -176,8 +182,6 @@ the ballooning number of new products, tests, and test harnesses.
 \BulletItem
 Supported automated provisioning, updates, security patches, and
 technical support for engineering testbeds and manufacturing systems.
-%\BulletItem
-%Shipped one new product
 
 \BigGap
 \textit{Manager, Internet Firmware Validation}
@@ -185,15 +189,11 @@ technical support for engineering testbeds and manufacturing systems.
 \BulletItem
 Oversaw the hiring process, growing the team from 4 to 9 engineers over 10
 months.
-%\BulletItem
-%Wrote product requirements and held engineers accountable for them.
 \BulletItem
 Expanded test coverage while delivering on tight deadlines and
 communicating progress to C-suite.
 \BulletItem
 Built and shipped a test storage and reporting solution using MariaDB.
-%\BulletItem
-%Shipped three new products
 
 \BigGap
 \textit{Senior Systems Integration and Validation Engineer}
@@ -202,12 +202,6 @@ Built and shipped a test storage and reporting solution using MariaDB.
 Designed and wrote full-system test software for manufacturing,
 including controls for a variety of hardware components over RS232,
 USB, and ethernet.
-%\BulletItem
-%Wrote, maintained, and supported software for automated depot upgrades
-%intended for non-technical users.
-%\BulletItem
-%Developed and carried out the technical software interviews for new
-%team hires. Succesfully hired dozens of employees over 4 years.
 \BulletItem
 Mentored 8 Northeastern co-ops over 3 years, each of which took ownership of
 long-term, critical projects. Two went on to take full-time positions with
@@ -216,35 +210,15 @@ Starry.
 Built and expanded an internal test network and testbed automation
 infrastructure to the manufacturing line overseas. Maintained 24/7 uptime over
 7 time zones.
-%\BulletItem
-%Shipped two new products
-
-\BigGap
-\textit{Systems Integration and Validation Engineer}
-\Gap
 \BulletItem
 Set up automation from scratch for administrating and documenting
 state on test harnesses using Ansible.
-%\BulletItem
-%Built out an internal network for testing and development, as well
-%as support for other engineering teams.
-%\BulletItem
-%Wrote, maintained, and supported test automation for manufacturing.
 \BulletItem
-Migrated existing projects to Python 3.
+Implemented team code standards and automated their enforcement in CI with
+Jenkins.
 \BulletItem
-Implemented team code standards (formatting, pylint, mypy, documentation,
-etc.) and automated their enforcement in CI with Jenkins.
-
-\BigGap
-\textit{Junior Software Engineer, QA}
-\Gap
-\BulletItem
-Wrote unit and integration tests for firmware on Starry radios.
-\BulletItem
-Built, maintained, and automated physical test harnesses.
-%\BulletItem
-%Shipped two new products
+Built, maintained, and automated physical test harnesses for Starry radio
+firmware.
 
 \Section
 {Education}
