@@ -75,8 +75,8 @@
 \RequirePackage[
 left=0.50in,
 right=0.70in,
-top=0.50in,
-bottom=0.30in,
+top=0.40in,
+bottom=0.20in,
 nohead,
 ]{geometry}
 %includefoot]{geometry}
